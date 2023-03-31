@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
         <link rel="stylesheet" href="styles.css">
+
         <script type="text/javascript" src="assets/lib/axios/dist/axios.standalone.js"></script>
         <script type="text/javascript" src="assets/lib/CryptoJS/rollups/hmac-sha256.js"></script>
         <script type="text/javascript" src="assets/lib/CryptoJS/rollups/sha256.js"></script>
@@ -21,7 +22,6 @@
         <script type="text/javascript" src="assets/lib/apiGatewayCore/simpleHttpClient.js"></script>
         <script type="text/javascript" src="assets/lib/apiGatewayCore/utils.js"></script>
         <script type="text/javascript" src="assets/apigClient.js"></script>
-
 
     </head>
     <body>
@@ -36,12 +36,11 @@
                       <button class="btn btn-default" type="submit" onclick="searchPhoto()"><i class="fa fa-search"></i></button>
                     </div>
             </div>
-                <button id="start-record-btn" title="Start Recording">Start Recording</button>
-                <button id="pause-record-btn" title="Pause Recording">Stop Recording</button>
-
+            <button id="start-record-btn" title="Start Recording" onclick="startRecording()">Start Recording</button>
+            <button id="pause-record-btn" title="Pause Recording" onclick="stopRecording()">Stop Recording</button>
 
 <div id="gallery"> </div>
-            <h3 style="margin-top:30px;text-align:center">OR</h3>
+            <h3 style="margin-top:30px;text-align:center">or</h3>
   <h3 style="text-align:center">Upload a new photo</h3>
 
 
@@ -67,7 +66,6 @@
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="transcribe.js"></script>
         <script src="build_page.js"></script>
         <script src="assets/apigClient.js"></script>
 
