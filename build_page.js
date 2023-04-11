@@ -1,5 +1,4 @@
-// TEST CHANGE
-
+// TEST CHANGE 1
 document.getElementById("displaytext").style.display = "none";
 
 async function searchPhoto() {
